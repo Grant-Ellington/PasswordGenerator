@@ -1,6 +1,21 @@
-// Assignment code here
+// Assignment code here\
+
+
 function passwordGenerator(){
-var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let chars ={
+  lowerCaseLetters : 'abcdefghijklmnopqrstuvwxyz',
+  upperCaseLetters : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+  numbers: '1234567890',
+  specialCharacters:'!@#$%^&*(),./<>?',
+}
+
+var useCapitol = window.confirm('Press OK if you WANT CAPITOL LETTERS in you password.\n Press CANCEL if you DO NOT want CAPITOL LETTERS in you password.');
+var useNumbers = window.confirm('Press OK if you WANT NUMBERS in your password.\n Press CANCEL if you DO NOT want NUMBERS in your password.')
+var useSpecialSpecialCharacters =  window.confirm('Press OK if you WANT SPECIAL CHARACTERS (--!@#$%^&*(),./<>?--) in your password.\n Press CANCEL if tyou DO NOT want SPECIAL CHARACTERS in your password')
+
+if(useCapitol = true, useNumbers=true, useSpecialSpecialCharacters =true ){
+  chars = chars.lowerCaseLetters + chars.upperCaseLetters +  chars.numbers + chars.specialCharacters
+}
 var passwordLength = window.prompt('Choose between 8 and 128 charcters');
 var passwordText = "";
 
