@@ -5,13 +5,10 @@ var passwordLength = window.prompt('Choose between 8 and 128 charcters');
 var passwordText = "";
 
 
-  for( i = 0; i =10; i++) {
-  var randomNumber= Math.floor(Math.random()*passwordLength)
-  passwordText += chars.substring(randomNumber, randomNumber +1)
-  return passwordText
-  }    
-  console.log(randoomNumber)
-  debugger
+  for( i = 0; i <= passwordLength; i++) {
+  var randomNumber= Math.floor(Math.random()*chars.length);
+  passwordText += chars.substring(randomNumber, randomNumber +1);
+  } return passwordText
 };
 
 
