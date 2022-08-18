@@ -76,7 +76,7 @@ var chars= charSel()
 for( i = 0; i <= passwordLength; i++) {
 var randomNumber= Math.floor(Math.random()*chars.length);
 passwordText += chars.substring(randomNumber, randomNumber +1);
-} console.log(passwordText)
+}  return passwordText
 } 
 
 
@@ -86,7 +86,7 @@ var generateBtn = document.querySelector('#generate')
 
 // Write password to the #password input
 function writePassword(){
-  var password = passwordGenerator();
+  var password = passwordGenerator(); 
   var passwordText = document.querySelector("#password");
 
 
